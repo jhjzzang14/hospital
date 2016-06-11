@@ -1,0 +1,1 @@
+angular.module('Nurse',['Home','nurseTop','Nav','PatientAdministration','Reservation','Prescription','Schedule']);

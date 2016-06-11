@@ -1,0 +1,13 @@
+.center {margin: 20px; height:760px; text-align: center; }
+
+#patient {height:760px; background-color: white; width:570px; float: left}
+
+#reservation {height:760px; background-color: white; width:570px; float: right; padding:10px}
+
+h1{color:purple;}
+
+#reservation table {width:100%;}
+
+#reservation table thead tr th { height:45px; text-align:center; color:#ffffff; background-color:graytext; }
+
+#reservation table tbody tr td { text-align:center; padding:5px 0; border-bottom:1px solid #f0f2f2; }

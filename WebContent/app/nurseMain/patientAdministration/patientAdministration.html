@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="view">
+	<div class="title">환자 관리</div>
+	<br>
+		<form method="get" class="button">
+			<input type="text" id="searchText" ng-model="Patient">
+			<button class="write-btn btn" ng-click="search()">검색</button>
+		</form>
+	<br>
+		<div id="PatientList">
+		<table>
+			<thead>
+				<tr>
+					<th>이름</th>
+					<th>생년월일</th>
+					<th>성별</th>
+					<th>주소</th>
+					<th>전화번호</th>
+					<th>등록일</th>
+					<th>마지막 방문일</th>	
+					<th>삭제</th>			
+				</tr>
+			</thead>
+			<tbody ng-repeat="item in items">
+				<tr ng-click="updatePatient({patient_no:item.patient_no,name:item.name,birthday:item.birthday,gender:item.gender,address:item.address,tel:item.tel})">
+					<td>{{item.name}}</td>
+					<td>{{item.birthday}}</td>
+					<td>{{item.gender}}</td>
+					<td>{{item.address}}</td>
+					<td>{{item.tel}}</td>
+					<td>{{item.createdate}}</td>
+					<td>{{item.last}}</td>
+					<td><button ng-click="Del(item.patient_no)">삭제</button></td>
+				</tr>
+			</tbody>
+		</table>
+		</div>
+		
+	<div class="insertPatient" ng-show='insertShow'>
+		<form class="form" method="post">
+			<legend>등록</legend>
+				<input type="text" class="form-control input-lg" placeholder="이름" ng-model='name' ng-required="true"> 
+				<Br>
+				<select class="form-control input-lg" ng-model='gender' >
+					<option >남자</option>
+					<option>여자</option>
+				</select>
+				<Br>
+				<div class='row'>
+				<div class="col-xs-6 col-md-6">
+		     	<input type="text" class="form-control input-lg" placeholder="920310" ng-model='FbirthDay'  onkeyPress="if ((event.keyCode<48) || (event.keyCode>57)) event.returnValue=false;" ng-required="true">
+				</div>
+				<div class="col-xs-6 col-md-6">
+		     	<input type="password" class="form-control input-lg"ng-model='LbirthDay' onkeyPress="if ((event.keyCode<48) || (event.keyCode>57)) event.returnValue=false;" ng-required="true">
+				</div>
+				
+				</div> 
+				<Br>
+				<input type="text" class="form-control input-lg" placeholder="주소" ng-model='address' ng-required="true"> 
+				<br>
+				<div class="row">
+					
+					<div class="col-xs-4 col-md-4">
+						<input type="text" class="form-control input-lg" placeholder="010" ng-model='Ftel' ng-required="true"> 
+					</div>
+				
+					<div class="col-xs-4 col-md-4">
+						<input type="text" class="form-control input-lg" placeholder="1234" ng-model='Mtel' ng-required="true"> 
+					</div>
+					
+					<div class="col-xs-4 col-md-4">
+						<input type="text" class="form-control input-lg" placeholder="5678" ng-model='Ltel' ng-required="true"> 
+					</div>
+				</div>
+				<Br>
+				<input value='등록' class="btn btn-lg btn-primary btn-block signup-btn" type="submit" ng-click='insert()'>
+		</form>
+		</div>	
+		
+		<div class="insertPatient" ng-hide="updateshow">
+		<form class="form" method="post">
+			<legend>수정</legend>
+				<input type="text" class="form-control input-lg" placeholder="이름" ng-model='name' ng-required="true"> 
+				<Br>
+				<select class="form-control input-lg" ng-model='gender' >
+					<option >남자</option>
+					<option>여자</option>
+				</select>
+				<Br>
+				<div class='row'>
+				<div class="col-xs-6 col-md-6">
+		     	<input type="text" class="form-control input-lg" placeholder="920310" ng-model='FbirthDay'  onkeyPress="if ((event.keyCode<48) || (event.keyCode>57)) event.returnValue=false;" ng-required="true">
+				</div>
+				<div class="col-xs-6 col-md-6">
+		     	<input type="password" class="form-control input-lg"ng-model='LbirthDay' onkeyPress="if ((event.keyCode<48) || (event.keyCode>57)) event.returnValue=false;" ng-required="true">
+				</div>
+				
+				</div> 
+				<Br>
+				<input type="text" class="form-control input-lg" placeholder="주소" ng-model='address' ng-required="true"> 
+				<br>
+				<div class="row">
+					
+					<div class="col-xs-4 col-md-4">
+						<input type="text" class="form-control input-lg" placeholder="010" ng-model='Ftel' ng-required="true"> 
+					</div>
+				
+					<div class="col-xs-4 col-md-4">
+						<input type="text" class="form-control input-lg" placeholder="1234" ng-model='Mtel' ng-required="true"> 
+					</div>
+					
+					<div class="col-xs-4 col-md-4">
+						<input type="text" class="form-control input-lg" placeholder="5678" ng-model='Ltel' ng-required="true"> 
+					</div>
+				</div>
+				<Br>
+				<input value='수정' class="btn btn-lg btn-primary btn-block signup-btn" type="submit" ng-click='Update()'>
+		</form>
+		</div>	
+	</div>
+
+</body>
+</html>

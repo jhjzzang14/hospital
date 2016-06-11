@@ -1,0 +1,17 @@
+@CHARSET "EUC-KR";
+.view {padding:20px;margin: 20px;  background-color: #f7f7f7; height:760px;}
+
+.board-btn { float:right; }
+.board-btn .btn { margin:15px 10px 0 10px; font-family: 'Noto Sans KR', sans-serif; font-size:15px; }
+ .board-btn .btn.write-btn { background-color:#1f83af; border:2px solid #1f83af; color:#ffffff; padding:3px 15px; border-radius:5px; }
+
+.page-nation { text-align:center; margin:25px; color:#293149; }
+.page-nation span { margin:0 5px; }
+
+.createNotice {}
+
+.noticeItem td:FIRST-CHILD {
+	color:red;
+}
+
+.modal-dialog {width:100%}
