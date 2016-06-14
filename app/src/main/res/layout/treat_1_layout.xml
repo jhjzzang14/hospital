@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dcicon"
+        android:src="@drawable/doctor"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="80dp"
+        />
+    <Button
+        android:id="@+id/treatment"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/dcicon"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="진료 예약"
+        android:textColor="#FFFFFF"
+        android:background="#FFB914"
+        />
+    <Button
+        android:id="@+id/treatcheck"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/treatment"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="#50C2FF"
+        android:text="예약 확인"
+        android:textColor="#FFFFFF"
+        />
+</RelativeLayout>

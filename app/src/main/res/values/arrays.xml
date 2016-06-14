@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="doctor_check">
+        <item> 내과 </item>
+        <item> 치과 </item>
+        <item> 정형외과 </item>
+    </string-array>
+
+    <string-array name="doctor_name">
+        <item> 장호준 </item>
+        <item> 임유표 </item>
+        <item> 이현규 </item>
+    </string-array>
+
+    <string-array name="select">
+        <item> 글 제목 </item>
+        <item> 글 내용 </item>
+    </string-array>
+</resources>

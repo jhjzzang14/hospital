@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/mapb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/mappicture2"
+        ></ImageView>
+
+    <TextView
+        android:id="@+id/full"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mapb"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="30dp"
+        android:text="한국교통대학병원"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/info_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/full"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:text="주소: 경기도 의왕시 철도박물관로 157"
+        android:textSize="12sp"
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/info_line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_address"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:text="교통: 1호선 의왕역(1-1, 1-2)"
+        android:textSize="12sp"
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/info_web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_line2"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:text="웹 사이트: "
+        android:textSize="12sp"
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/info_websrc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_line2"
+        android:layout_toRightOf="@id/info_web"
+        android:layout_alignTop="@id/info_web"
+        android:layout_marginLeft="5dp"
+        android:text="http://www.ut.ac.kr"
+        android:textSize="12sp"
+        android:textColor="#FFB914"
+        android:layout_alignParentEnd="false">
+    </TextView>
+    <TextView
+        android:id="@+id/info_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_web"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:text="연락처: "
+        android:textSize="12sp"
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/info_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_websrc"
+        android:layout_alignTop="@id/info_phone"
+        android:layout_toRightOf="@id/info_phone"
+        android:layout_marginLeft="5dp"
+        android:text="010-9123-8254"
+        android:textSize="12sp"
+        android:textColor="#FFB914"
+        >
+    </TextView>
+</RelativeLayout>

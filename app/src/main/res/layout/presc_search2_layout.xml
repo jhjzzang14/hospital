@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        >
+    <TextView
+        android:id="@+id/dayname"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="날짜"
+        android:textSize="15sp"/>
+    
+    <TextView
+        android:id="@+id/dayname2"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/dayname"
+        android:layout_marginLeft="80dp"
+        android:text="2016년 4월 20일"
+        android:textSize="15sp"
+        android:layout_alignTop="@id/dayname"
+        />
+        <TextView
+            android:id="@+id/dayg"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/dayname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="진료과"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/dayg2"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/dayname2"
+            android:layout_toRightOf="@id/dayg"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"
+            android:text="정형외과"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/doctorname"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/dayg"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="담당의사"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/pnumber"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/dayg2"
+            android:layout_toRightOf="@id/doctorname"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:text="장호준(010-5150-2481)"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/pnumber"
+            android:layout_marginTop="5dp"
+            android:background="#000000">
+        </LinearLayout>
+<!-- 꼭 3~4줄로 나눠서 각 ID별로 데이터베이스에서 쿼리문 나눠서 입력 받을 것! !-->
+        <TextView
+            android:id="@+id/readline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="무릎통증 호소이상\n일시적 통증 및 염증완화제 처방\n간단한 DMC 재활운동"
+            android:textSize="15sp"
+            />
+
+        <LinearLayout
+            android:id="@+id/line2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/readline1"
+            android:layout_marginTop="5dp"
+            android:background="#000000">
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/treatc"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/line2"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="5dp"
+            android:text="처방전"
+            android:textSize="15sp"/>
+        
+        <TextView
+            android:id="@+id/treatc1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/treatc"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="15sp"
+            android:text="위장약, 근이완제(에포린 정), 소염제(에어탈)"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

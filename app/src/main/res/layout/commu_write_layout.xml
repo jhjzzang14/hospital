@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:text="제목"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:background="#666666"
+        />
+
+    <EditText
+        android:id="@+id/titlewrite"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/title2"
+        android:layout_alignTop="@id/title2"
+        android:hint="제목을 입력하세요"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:background="@null"/>
+
+    <TextView
+        android:id="@+id/passwordtitle"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/title2"
+        android:layout_marginLeft="30dp"
+        android:text="비밀번호"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:background="#666666"
+        />
+
+    <EditText
+        android:id="@+id/passwordwrite"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/passwordtitle"
+        android:layout_alignTop="@id/passwordtitle"
+        android:inputType="numberPassword"
+        android:hint="비밀번호를 입력하세요"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:background="@null"/>
+
+
+    <LinearLayout
+        android:id="@+id/textarea1"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/passwordtitle"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/layout_border">
+
+        <EditText
+            android:id="@+id/givetext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="내용을 입력하세요."
+            android:textSize="11sp"
+            android:background="@null"
+            ></EditText>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/setpicture"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/textarea1"
+        android:layout_marginLeft="30dp"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:background="#FFFFFF"/>
+    <Button
+        android:id="@+id/picturechange"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/textarea1"
+        android:layout_toRightOf="@id/setpicture"
+        android:text="사진수정"
+        android:textSize="12sp"
+        android:textColor="#FFFFFF"
+        android:background="#666666"/>
+    <Button
+        android:id="@+id/listback1"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="이전으로"
+        android:textSize="12sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_below="@id/setpicture"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:background="#24A6BD"
+
+        />
+    <Button
+        android:id="@+id/getpicture"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="사진첨부"
+        android:textSize="12sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_below="@id/setpicture"
+        android:layout_marginTop="15dp"
+        android:layout_alignRight="@id/picturechange"
+        android:background="#24A6BD"
+        />
+
+</RelativeLayout>

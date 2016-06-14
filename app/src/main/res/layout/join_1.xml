@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/TopBar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="#24A6BD">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="20dp"
+            android:text="병원관리 App"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/infor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="회원으로 가입하실 경우, 아래 약관에 대한"
+        android:textSize="17dp"
+        android:textColor="#000000"
+        android:layout_toRightOf="@id/idimage"
+        android:layout_below="@id/TopBar"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="35dp"/>
+    <TextView
+        android:id="@+id/infor2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="안내를 반드시 읽고 동의해주시기 바랍니다."
+        android:textSize="17dp"
+        android:textColor="#000000"
+        android:layout_below="@id/infor"
+        android:layout_marginLeft="30dp"></TextView>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:text="이용약관"
+        android:textSize="18dp"
+        android:layout_below="@id/infor2"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="100dp"></TextView>
+    <CheckBox
+        android:id="@+id/cb1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@id/text1"
+        android:layout_marginLeft="280dp"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="230dp"
+        android:layout_height="25dp"
+        android:text="개인정보 수집 및 이용목적"
+        android:textSize="18dp"
+        android:layout_below="@id/text1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"></TextView>
+    <CheckBox
+        android:id="@+id/cb2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@id/text2"
+        android:layout_marginLeft="280dp"/>
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="230dp"
+        android:layout_height="25dp"
+        android:text="개인정보 수집항목 및 방법"
+        android:textSize="18dp"
+        android:layout_below="@id/text2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"></TextView>
+    <CheckBox
+        android:id="@+id/cb3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@id/text3"
+        android:layout_marginLeft="280dp"/>
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="230dp"
+        android:layout_height="25dp"
+        android:text="개인정보 보유 및 이용기간"
+        android:textSize="18dp"
+        android:layout_below="@id/text3"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"></TextView>
+    <CheckBox
+        android:id="@+id/cb4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@id/text4"
+        android:layout_marginLeft="280dp"/>
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:text="전체동의"
+        android:textSize="18dp"
+        android:textColor="#0054FF"
+        android:layout_below="@id/text4"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="100dp"></TextView>
+    <CheckBox
+        android:id="@+id/cb5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@id/text5"
+        android:layout_marginLeft="280dp"/>
+
+    <Button
+        android:id="@+id/agree"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="동의"
+        android:textColor="#FFFFFF"
+        android:background="#FFB914"
+        android:layout_below="@id/text5"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="45dp"
+        android:onClick="allAgree"/>
+
+    <Button
+        android:id="@+id/notagree"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="동의하지 않음"
+        android:textColor="#FFFFFF"
+        android:background="#50C2FF"
+        android:layout_alignTop="@id/agree"
+        android:layout_marginLeft="195dp"
+        android:onClick="noAgree"/>
+
+</RelativeLayout>

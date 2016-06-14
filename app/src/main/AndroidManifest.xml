@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.lime.test">
+
+    <uses-permission android:name="com.example.lime.test.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="17" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/iconpng"
+        android:label="병원관리 App"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA9zEQ8emHyKd1q4fNlVMl89TtdSxU_yBk" />
+
+        <activity android:name=".MainActivity"
+                android:icon="@drawable/iconpng">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+            <activity
+                android:name="Idsearc"
+                android:label="아이디 찾기"
+                android:icon="@drawable/iconpng"></activity>
+            <activity
+                android:name="Passsearc"
+                android:label="비밀번호 찾기"></activity>
+        <activity
+                android:name="Login"
+                android:label="로그인"></activity>
+        <activity
+                android:name="Join"
+                android:label="회원가입"></activity>
+        <activity
+            android:name="Join_1"
+            android:label="회원가입1"></activity>
+        <activity android:name="Join_2"
+            android:label="회원가입2"></activity>
+        <activity
+                android:name="Tab_treatcheck"
+                android:label="예약하기"></activity>
+        <activity android:name="treat_1"
+            android:label="ㅇㅇ"></activity>
+        <activity android:name="treat_2"
+            android:label="ㅇㅇㅇ"></activity>
+        <activity android:name="Tab_information"
+                    android:label="병원정보"></activity>
+        <activity android:name="Tab_prescription"
+                    android:label="진료확인"></activity>
+        <activity android:name="Tab_community"
+                    android:label="게시판"></activity>
+        <activity android:name="Commu_1"
+                    android:label="게시판1"></activity>
+        <activity android:name="Commu_write"
+                    android:label="글쓰기"></activity>
+        <activity android:name="Commu_read"
+                    android:label="글읽기"></activity>
+
+        <activity android:name="Tab_campaign"
+                    android:label="캠페인"></activity>
+        <activity android:name="Campa_1"
+                    android:label="캠페인1"></activity>
+        <activity android:name="Campa_read"
+                    android:label="캠페인 글읽기"></activity>
+        <activity android:name="Campa_read1"
+            android:label="캠페인 글읽기1"></activity>
+        <activity android:name="presc_search_0"
+                    android:label="처방전 홈페이지"></activity>
+        <activity android:name="presc_search_1"
+                    android:label="처방전 확인">
+                    </activity>
+        <activity android:name="presc_search_2"
+                    android:label="처방전"
+                    ></activity>
+        <activity android:name="infor_1"
+                    android:label="Map"
+                    android:theme="@android:style/Theme.Dialog"></activity>
+
+
+
+
+    </application>
+
+</manifest>

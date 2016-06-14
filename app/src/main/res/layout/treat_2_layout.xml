@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <Spinner
+        android:id="@+id/dcheck"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"/>
+
+    <Spinner
+        android:id="@+id/dname"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/dcheck"
+        android:layout_toRightOf="@id/dcheck"
+        android:layout_marginLeft="40dp"/>
+
+    <DatePicker
+        android:id="@+id/yeardp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:layout_below="@id/dname"
+        android:layout_marginLeft="55dp"
+        ></DatePicker>
+
+    <Button
+        android:id="@+id/dayup"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/yeardp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp"
+        android:text="예약날짜"
+        android:textColor="#FFFFFF"
+        android:background="#24A6BD"
+        android:onClick="dayupdate"
+        />
+
+    <Button
+        android:id="@+id/timedb"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/yeardp"
+        android:layout_toRightOf="@id/dayup"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:text="예약시간"
+        android:textColor="#FFFFFF"
+        android:background="#FFB914"
+        android:onClick="ontimeClicked"
+        ></Button>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timedb"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="13sp"
+        />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/timedb"
+                android:layout_toRightOf="@id/tv"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="13sp"
+                />
+
+
+
+    <Button
+        android:id="@+id/treat"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:background="#24A6BD"
+        android:text="예약"
+        android:textColor="#FFFFFF"/>
+
+            </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

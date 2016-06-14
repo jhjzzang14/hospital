@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Spinner
+        android:id="@+id/readselect"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        />
+
+    <EditText
+        android:id="@+id/noticeinput"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_toRightOf="@id/readselect"
+        android:layout_alignTop="@id/readselect"
+        android:layout_marginLeft="5dp"
+        android:ems="10"
+        />
+    <Button
+        android:id="@+id/commusearch"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_toRightOf="@id/noticeinput"
+        android:layout_alignTop="@id/noticeinput"
+        android:layout_marginLeft="2dp"
+        android:text="검색"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="#FFFFFF"
+        android:background="#000000"
+        />
+    <Button
+        android:id="@+id/commuwrite"
+        android:layout_width="60dp"
+       android:layout_height="35dp"
+       android:layout_toRightOf="@id/commusearch"
+        android:layout_alignTop="@id/commusearch"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:text="글쓰기"
+        android:textSize="12sp"
+        android:textColor="#FFFFFF"
+        android:background="#24A6BD"
+        />
+
+    <ListView
+        android:id="@+id/commulist"
+        android:layout_below="@id/noticeinput"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ListView>
+</RelativeLayout>

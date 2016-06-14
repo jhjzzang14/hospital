@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/smokeline1"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="15sp"
+            android:text="담배를 끊는것은 새해 목표뿐 아니라 365일 언제든지 많은 사람들이 시도하고 있다.
+몇년전부터는 담배값이 2배가량 껑충 뛰어올라 그로인해 흡연율이 다소 줄어들기도 했다.
+하지만 주위 사람들의 영향 및 의지력 부족으로 인해 다시 시작하는 사람도 적지 않다.
+하지만 전자담배, 금연치료, 클리닉 등 예전에 비해 다양하고 효율적인 금연성공방법들이
+하나둘씩 나타나기 시작하여 많은 사람들이 큰 관심을 보이고 있다."/>
+    <ImageView
+        android:id="@+id/smokepicture1"
+        android:layout_below="@id/smokeline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/nosmoke222"
+        android:layout_marginTop="10dp">
+    </ImageView>
+        <TextView
+            android:id="@+id/smokeline2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@id/smokepicture1"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="문제는 시도에서 끝나는 경우가 많다는 것이다. 오랫동안 니코틴으로부터 노출이 되어온 경우
+단박에 이를 끊어내기란 여간 힘든 것이 아닐 수 없다. 그래서 전자담배와 같이 대신 할 수 있는
+매개체를 활용하여 시간을 두고 천천히 끊으려는 이들이 많지만 이또한 말처럼 쉽지만은 않다.
+"/>
+        <ImageView
+            android:id="@+id/smokepicture2"
+            android:layout_below="@id/smokeline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/nosmoke111"
+            android:layout_marginTop="10dp">
+        </ImageView>
+        <TextView
+            android:id="@+id/smokeline3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@id/smokepicture2"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="실패하는 이들을 보면 대체로 뚜렷한 목표가 없는 경우가 많다. 끊으려는 계기가 마냥 두루뭉술한
+경우, 구체적인 목표가 없기 때문에 일시적인 유혹에 휩쓸리기 쉽다. 이때 효율적인 금연성공방법은
+뚜렷한 자기목표를 정립하는 것이다. 예를 들면 단번에 끊는 것보다는 기간을 정해놓고 처음엔
+한두개피, 두번째에는 세네개피 줄이는 식으로 하는 것이다. 그렇다면 보다 효율적인 금연성공방법은 무엇이 있을까?">
+        </TextView>
+        <ImageView
+            android:id="@+id/smokepicture3"
+            android:layout_below="@id/smokeline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/nosmoke333"
+            android:layout_marginTop="10dp">
+        </ImageView>
+        <TextView
+            android:id="@+id/smokeline4"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@id/smokepicture3"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:textSize="15sp"
+            android:text="어쩔수 없이 손을 대지 못하게 환경을 조성하는 것도 필요하다. 특히 주변 지인들 가운데 흡연자가
+많을 경우에는 더욱 끊기가 힘든데, 이때에는 잠시 그 자리를 피해있거나 금연 중이라고 확실히
+말해두는 것도 효율적인 금연성공방법 중 하나이다. 나 자신의 건강이 첫째로 중요시 되어야 하겠지만
+나아가서 나의 가족, 나의 친구를 생각해서라도 이번에는 꼭 성공 하도록 하는 것이 좋다.">
+
+        </TextView>
+            </RelativeLayout>
+        </ScrollView>
+
+
+
+</RelativeLayout>

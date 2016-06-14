@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lime.test.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idimage"
+        android:src="@drawable/idicon"
+        android:layout_marginTop="85dp"
+        android:layout_marginLeft="35dp" />
+
+    <EditText
+        android:id="@+id/idinput"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:hint="아이디를 입력하세요"
+        android:ems="10"
+        android:layout_toRightOf="@id/idimage"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idpassimage"
+        android:src="@drawable/jgreen2"
+        android:layout_below="@id/idimage"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="35dp"/>
+
+    <EditText
+        android:id="@+id/idpassinput"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:inputType="numberPassword"
+        android:ems="10"
+        android:hint="비밀번호를 입력하세요"
+        android:layout_toRightOf="@id/idpassimage"
+        android:layout_below="@id/idinput"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <Button
+        android:id="@+id/idloginButton"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/idpassinput"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="25dp"
+        android:background="#FFB914"
+        android:text="로그인"
+        android:textColor="#FFFFFF"
+        />
+    
+    <Button
+        android:id="@+id/ididsearch"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@id/idloginButton"
+        android:layout_below="@id/idloginButton"
+        android:layout_marginTop="25dp"
+        android:text="아이디 찾기"
+        android:background="#E8F5FF"
+        android:textColor="#FFFFFF"
+        android:onClick="idSearch"/>
+
+    <Button
+        android:id="@+id/idpasssearch"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/idloginButton"
+        android:layout_toRightOf="@id/ididsearch"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:text="비밀번호 찾기"
+        android:textColor="#FFFFFF"
+        android:background="#E8F5FF"
+        android:onClick="passSearch"
+        />
+
+    <Button
+        android:id="@+id/idjoin"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/idpasssearch"
+        android:layout_marginLeft="94dp"
+        android:layout_marginTop="20dp"
+        android:background="#E8F5FF"
+        android:text="회원가입"
+        android:textColor="#FFFFFF"
+        android:onClick="theJoin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ⓒ ---------. All right reserved"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="70dp"
+        />
+
+
+</RelativeLayout>

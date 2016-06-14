@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:text="제목"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:background="#666666"
+        />
+
+    <TextView
+        android:id="@+id/titlename"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/title"
+        android:layout_alignTop="@id/title"
+        android:text="안녕하세요"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:background="#FFFFFF"/>
+
+    <LinearLayout
+        android:id="@+id/textarea"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/titlename"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/layout_border">
+
+        <TextView
+            android:id="@+id/taketext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="병원 오픈시간이 언제인가요?"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            ></TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/questtitle"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/textarea"
+        android:layout_marginLeft="30dp"
+        android:text="답변"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:background="#666666"
+        />
+
+    <TextView
+        android:id="@+id/questname"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@id/questtitle"
+        android:layout_alignTop="@id/questtitle"
+        android:text="오전 9시이며 마감은 오후 6시입니다."
+        android:textSize="11sp"
+        android:gravity="center"
+        android:background="#FFFFFF"/>
+    
+    <Button
+        android:id="@+id/listback"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="목록으로"
+        android:textSize="11sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_below="@id/questtitle"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:background="#24A6BD"
+
+        />
+    <Button
+        android:id="@+id/commuwrite"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="글쓰기"
+        android:textSize="11sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_below="@id/questtitle"
+        android:layout_marginTop="15dp"
+        android:layout_alignRight="@id/textarea"
+        android:background="#24A6BD"
+
+        />
+
+</RelativeLayout>
