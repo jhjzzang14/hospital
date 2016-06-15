@@ -18,15 +18,13 @@ import java.util.Calendar;
  * Created by lime on 2016-06-09.
  */
 public class treat_2_TimePicker extends DialogFragment implements TimePickerDialog.OnTimeSetListener {
-
+    final Calendar c = Calendar.getInstance();
+    int hour = c.get(Calendar.HOUR_OF_DAY);
+    int minute = c.get(Calendar.MINUTE);
+    int min = 00;
     @Override
     public Dialog onCreateDialog(Bundle savedInstancedState) {
         // 현재 시간을 타임피커의 초기값으로 사용
-        final Calendar c = Calendar.getInstance();
-        int hour = c.get(Calendar.HOUR_OF_DAY);
-        int minute = c.get(Calendar.MINUTE);
-        int min = 00;
-
 
         TimePickerDialog tpd = new TimePickerDialog(getActivity(), AlertDialog.THEME_HOLO_LIGHT, this,
                 hour, min, DateFormat.is24HourFormat(getActivity()));

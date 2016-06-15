@@ -20,7 +20,20 @@ public class Tab_treatcheck extends ActivityGroup {
         history = new ArrayList<View>();
         treatcheckHGroup = this;
 
+        Intent getIntent = getIntent();
+        String name = getIntent.getStringExtra("name");
+        int no = getIntent.getIntExtra("no",1);
+        String birthday = getIntent.getStringExtra("birthday");
+        String address = getIntent.getStringExtra("address");
+        String phone = getIntent.getStringExtra("phone");
+
         Intent intent = new Intent(Tab_treatcheck.this, treat_1.class);
+        intent.putExtra("name",name);
+        intent.putExtra("no",no);
+        intent.putExtra("birthday",birthday);
+        intent.putExtra("address",address);
+        intent.putExtra("phone",phone);
+
         View view = getLocalActivityManager().startActivity("treat_1",
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)).getDecorView();
         replaceView(view);

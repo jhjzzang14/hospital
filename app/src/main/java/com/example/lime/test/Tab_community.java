@@ -20,7 +20,19 @@ public class Tab_community extends ActivityGroup {
         history = new ArrayList<View>();
         communityHGroup = this;
 
+        Intent getIntent = getIntent();
+        String name = getIntent.getStringExtra("name");
+        int no = getIntent.getIntExtra("no",1);
+        String birthday = getIntent.getStringExtra("birthday");
+        String address = getIntent.getStringExtra("address");
+        String phone = getIntent.getStringExtra("phone");
+
         Intent intent = new Intent(Tab_community.this, Commu_1.class);
+        intent.putExtra("name",name);
+        intent.putExtra("no",no);
+        intent.putExtra("birthday",birthday);
+        intent.putExtra("address",address);
+        intent.putExtra("phone",phone);
         View view = getLocalActivityManager().startActivity("Commu_1",
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)).getDecorView();
         replaceView(view);

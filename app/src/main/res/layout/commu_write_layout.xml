@@ -70,25 +70,6 @@
             ></EditText>
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/setpicture"
-        android:layout_width="230dp"
-        android:layout_height="30dp"
-        android:layout_below="@id/textarea1"
-        android:layout_marginLeft="30dp"
-        android:textSize="11sp"
-        android:gravity="center"
-        android:background="#FFFFFF"/>
-    <Button
-        android:id="@+id/picturechange"
-        android:layout_width="70dp"
-        android:layout_height="30dp"
-        android:layout_below="@id/textarea1"
-        android:layout_toRightOf="@id/setpicture"
-        android:text="사진수정"
-        android:textSize="12sp"
-        android:textColor="#FFFFFF"
-        android:background="#666666"/>
     <Button
         android:id="@+id/listback1"
         android:layout_width="100dp"
@@ -97,23 +78,23 @@
         android:textSize="12sp"
         android:textColor="#FFFFFF"
         android:gravity="center"
-        android:layout_below="@id/setpicture"
+        android:layout_below="@id/textarea1"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="30dp"
         android:background="#24A6BD"
 
         />
     <Button
-        android:id="@+id/getpicture"
+        android:id="@+id/inserts"
         android:layout_width="100dp"
         android:layout_height="40dp"
-        android:text="사진첨부"
+        android:text="등록하기"
         android:textSize="12sp"
         android:textColor="#FFFFFF"
         android:gravity="center"
-        android:layout_below="@id/setpicture"
+        android:layout_below="@id/textarea1"
         android:layout_marginTop="15dp"
-        android:layout_alignRight="@id/picturechange"
+        android:layout_alignRight="@id/textarea1"
         android:background="#24A6BD"
         />
 

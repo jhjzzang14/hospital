@@ -10,6 +10,9 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 import java.util.Calendar;
 
@@ -63,6 +66,9 @@ public class treat_2 extends Activity implements View.OnClickListener {
         treat_2_TimePicker TimeFragment = new treat_2_TimePicker();
         //show : fragmentManager에 추가된 대화상자 출력
         TimeFragment.show(getParent().getFragmentManager(), "TimePicker");
+        int a = TimeFragment.hour;
+
+        Toast.makeText(getApplicationContext(), Integer.toString(a), Toast.LENGTH_SHORT).show();
 
 
 

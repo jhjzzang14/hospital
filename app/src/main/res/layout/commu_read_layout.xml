@@ -63,7 +63,7 @@
         android:layout_height="60dp"
         android:layout_toRightOf="@id/questtitle"
         android:layout_alignTop="@id/questtitle"
-        android:text="오전 9시이며 마감은 오후 6시입니다."
+        android:text=""
         android:textSize="11sp"
         android:gravity="center"
         android:background="#FFFFFF"/>

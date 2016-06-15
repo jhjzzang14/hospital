@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Spinner;
 
 /**
  * Created by lime on 2016-06-09.
@@ -14,12 +15,12 @@ public class presc_search_0 extends Activity implements View.OnClickListener{
 
     final Context context = this;
     private Button btnAlert;
+    Spinner dname1;
 
     @Override
     public void onCreate(Bundle savedInstancedState) {
         super.onCreate(savedInstancedState);
         setContentView(R.layout.presc_1_layout);
-
 
         btnAlert = (Button) findViewById(R.id.dnamesearch);
         btnAlert.setOnClickListener(this);

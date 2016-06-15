@@ -27,12 +27,17 @@ import io.socket.emitter.Emitter;
 public class MainActivity extends AppCompatActivity {
     EditText id;
     EditText pwd;
+    int no;
     String name;
+    String birthday;
+    String address;
+    String phone;
     String user_id;
+    userInfo info;
     private io.socket.client.Socket mSocket;
     {
         try {
-            mSocket = IO.socket("http://192.168.0.15:8000");
+            mSocket = IO.socket("http://192.168.43.171:8000");
 
         }catch (Exception e)
         {
@@ -45,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        info= new userInfo();
         final Button login = (Button) findViewById(R.id.idloginButton);
         id = (EditText) findViewById(R.id.idinput);
         pwd = (EditText) findViewById(R.id.idpassinput);
@@ -110,11 +116,21 @@ public class MainActivity extends AppCompatActivity {
                         for (int i = 0; i < data.length(); i++) {
 
                             JSONObject jsonObjectRow = (JSONObject) data.get(i);
-                            name = jsonObjectRow.getString("id");
+                            name = jsonObjectRow.getString("name");
+                            no = jsonObjectRow.getInt("no");
+                            birthday = jsonObjectRow.getString("birthday");
+                            address = jsonObjectRow.getString("address");
+                            phone = jsonObjectRow.getString("phone");
+
                         }
                         if(data.length()==1)
                         {
                             Intent intent = new Intent(getApplicationContext(), Login.class);
+                            intent.putExtra("name",name);
+                            intent.putExtra("no",no);
+                            intent.putExtra("birthday",birthday);
+                            intent.putExtra("address",address);
+                            intent.putExtra("phone",phone);
                             startActivity(intent);
                         }else if(data.length()==0)
                         {

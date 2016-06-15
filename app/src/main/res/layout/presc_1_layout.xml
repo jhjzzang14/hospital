@@ -5,25 +5,31 @@
     >
 
 
-    <Spinner
-        android:id="@+id/dname1"
-        android:layout_width="120dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginLeft="60dp"
-        android:textSize="25dp"/>
 
     <Button
         android:id="@+id/dnamesearch"
         android:layout_width="80dp"
         android:layout_height="35dp"
-        android:layout_toRightOf="@id/dname1"
-        android:layout_alignTop="@id/dname1"
         android:layout_marginLeft="50dp"
         android:text="조회"
         android:textSize="15dp"
         android:textColor="#FFFFFF"
         android:background="#000000"
-        android:onClick="clickdnamesearch"/>
+        android:onClick="clickdnamesearch"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="20px"
+        />
+
+    <ListView
+        android:id="@+id/namelist1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/dnamesearch"
+        android:background="#FFFFFF"
+        android:listSelector="#FF0000"
+        android:fastScrollEnabled="true"
+        ></ListView>
 
 </RelativeLayout>
