@@ -1,0 +1,22 @@
+@CHARSET "EUC-KR";
+.view {margin: 20px; text-align:center; background-color: white; height:760px;}
+
+#search {padding-top:30px;}
+
+#ReservationText {border-radius:5px;height:30px;text-align: center;}
+
+#PatientList {font-size:16px;padding:20px}
+
+.button {text-align: right;padding-right:20px;}
+
+.view .button .btn.write-btn {height:30px; background-color:black; border:2px solid #1f83af; color:#ffffff; padding:3px 15px; border-radius:5px; }
+
+.view .btn.write-btn {text-size:30px;height:40px; background-color:black; border:2px solid #1f83af; color:#ffffff; padding:3px 15px; border-radius:5px; }
+
+
+
+.view table {width:100%}
+
+.view table thead tr th { height:45px; text-align:center; color:#ffffff; background-color:black; }
+
+.view table tbody tr td { text-align:center; padding:5px 0; border-bottom:1px solid #f0f2f2; }
