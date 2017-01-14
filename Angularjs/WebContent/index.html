@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="EUC-KR">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+<link rel='stylesheet' href="lib/bootstrap.min.css">
+<link rel="stylesheet" href="app/Login/login.css">
+<link rel="stylesheet" href="app/nurseMain/nurse.css">
+<link rel="stylesheet" href="app/nurseMain/nurseTop/nurseTop.css">
+<link rel="stylesheet" href="app/nurseMain/Nav/nav.css">
+<link rel="stylesheet" href="app/nurseMain/Home/home.css">
+<link rel="stylesheet" href="app/nurseMain/patientAdministration/patientAdministration.css">
+<link rel="stylesheet" href="app/nurseMain/Prescription/prescription.css">
+<link rel="stylesheet" href="app/nurseMain/Reservation/reservation.css">
+<link rel="stylesheet" href="app/nurseMain/Schedule/schedule.css">
+
+<link rel="stylesheet" href="app/doctorMain/doctor.css">
+<link rel="stylesheet" href="app/doctorMain/DocTop/docTop.css">
+<link rel="stylesheet" href="app/doctorMain/DocNav/docNav.css">
+
+<link rel="stylesheet" href="app/doctorMain/DocHome/docHome.css">
+
+<link rel="stylesheet" href="app/doctorMain/DocPrescription/docPrescription.css">
+
+<link rel="stylesheet" href="app/doctorMain/DocSchedule/docSchedule.css">
+
+<link rel="stylesheet" href="app/nurseMain/Prescription/Info.css">
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="lib/fullcalendar.css">
+
+</head>
+<body>
+	<div ui-view id="app-view"></div>
+</body>
+
+<script src="lib/moment.min.js"></script>  
+<script src="lib/angular.min.js"></script>
+<script src="lib/angular-route.js"></script>  
+<script src="lib/angular-ui-router.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="lib/ui-bootstrap-tpls.js"></script>
+<script src="lib/calendar.js"></script>
+<script src="lib/fullcalendar.js"></script>
+<script src="lib/gcal.js"></script>
+
+
+
+<!-- 간호사 관리 페이지 -->
+<script src="app/app.js"></script>
+<script src="app/Login/Login.js"></script>
+<script src="app/Login/LoginController.js"></script>
+<script src="app/Login/LoginService.js"></script>
+<script src="app/Login/LoginFactory.js"></script>
+
+<script src="app/nurseMain/Nurse.js"></script>
+<script src="app/nurseMain/nurseTop/nurseTop.js"></script>
+
+<!-- 홈 화면 -->
+<script src="app/nurseMain/Home/Home.js"></script>
+<script src="app/nurseMain/Home/HomeController.js"></script>
+<script src="app/nurseMain/Home/HomeService.js"></script>
+<script src="app/nurseMain/Home/HomeFactory.js"></script>
+
+
+
+<script src="app/nurseMain/Nav/Nav.js"></script>
+<script src="app/nurseMain/Nav/NavController.js"></script>
+
+<!-- 환자 관리 페이지 -->
+<script src="app/nurseMain/patientAdministration/PatientAdministration.js" charset="euc-kr"></script>
+<script src="app/nurseMain/patientAdministration/PatientAdministrationController.js" charset="euc-kr"></script>
+<script src="app/nurseMain/patientAdministration/PatientService.js" charset="euc-kr"></script>
+<script src="app/nurseMain/patientAdministration/PatientFactory.js" charset="euc-kr"></script>
+
+
+<!-- 예약 관리 페이지 -->
+<script src="app/nurseMain/Reservation/Reservation.js" charset="euc-kr"></script>
+<script src="app/nurseMain/Reservation/ReservationController.js" charset="euc-kr"></script>
+<script src="app/nurseMain/Reservation/ReservationService.js" charset="euc-kr"></script>
+<script src="app/nurseMain/Reservation/ReservationFactory.js" charset="euc-kr"></script>
+
+<!-- 처방전 관리 페이지 -->
+<script src="app/nurseMain/Prescription/Prescription.js" ></script>
+<script src="app/nurseMain/Prescription/PrescriptionController.js"></script>
+<script src="app/nurseMain/Prescription/PrescriptionService.js"></script>
+<script src="app/nurseMain/Prescription/PrescriptionFactory.js"></script>
+
+
+<!-- 스케줄 관리 페이지 -->
+<script src="app/nurseMain/Schedule/Schedule.js"></script>
+<script src="app/nurseMain/Schedule/ScheduleController.js"></script>
+<script src="app/nurseMain/Schedule/ScheduleService.js"></script>
+<script src="app/nurseMain/Schedule/ScheduleFactory.js"></script>
+
+
+
+
+<!-- 의사 관리 페이지 -->
+<script src="app/doctorMain/Doctor.js"></script>
+<script src="app/doctorMain/DocNav/DocNav.js"></script>
+<script src="app/doctorMain/DocTop/DocTop.js"></script>
+
+<!-- 의사 관라자 페이지 홈 -->
+<script src="app/doctorMain/DocHome/DocHome.js"></script>
+<script src="app/doctorMain/DocHome/docHomeController.js"></script>
+<script src="app/doctorMain/DocHome/DocHomeService.js"></script>
+<script src="app/doctorMain/DocHome/DocHomeFactory.js"></script>
+
+<script src="app/doctorMain/DocNav/DocNavController.js"></script>
+
+<script src="app/doctorMain/DocPrescription/DocPrescription.js"></script>
+<script src="app/doctorMain/DocPrescription/DocPrescriptionController.js"></script>
+<script src="app/doctorMain/DocPrescription/DocPrescriptionService.js"></script>
+<script src="app/doctorMain/DocPrescription/DocPrescriptionFactory.js"></script>
+
+<script src="app/doctorMain/DocSchedule/DocSchedule.js"></script>
+<script src="app/doctorMain/DocSchedule/DocScheduleController.js"></script>
+
+</html>

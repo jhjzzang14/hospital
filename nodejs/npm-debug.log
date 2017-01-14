@@ -1,0 +1,104 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'io.socket' ]
+2 info using npm@2.15.0
+3 info using node@v4.4.2
+4 verbose install initial load of C:\Users\장호준\#1project\package.json
+5 warn package.json package@1.0.0 No description
+6 warn package.json package@1.0.0 No repository field.
+7 warn package.json package@1.0.0 No README data
+8 verbose installManyTop reading scoped package data from C:\Users\장호준\#1project\node_modules\body-parser\package.json
+9 verbose installManyTop reading scoped package data from C:\Users\장호준\#1project\node_modules\cors\package.json
+10 verbose installManyTop reading scoped package data from C:\Users\장호준\#1project\node_modules\express\package.json
+11 verbose installManyTop reading scoped package data from C:\Users\장호준\#1project\node_modules\mysql\package.json
+12 verbose installManyTop reading scoped package data from C:\Users\장호준\#1project\node_modules\promise-mysql\package.json
+13 verbose installManyTop reading scoped package data from C:\Users\장호준\#1project\node_modules\router\package.json
+14 verbose installManyTop reading scoped package data from C:\Users\장호준\#1project\node_modules\socket.io\package.json
+15 verbose readDependencies loading dependencies from C:\Users\장호준\#1project\package.json
+16 silly cache add args [ 'io.socket', null ]
+17 verbose cache add spec io.socket
+18 silly cache add parsed spec Result {
+18 silly cache add   raw: 'io.socket',
+18 silly cache add   scope: null,
+18 silly cache add   name: 'io.socket',
+18 silly cache add   rawSpec: '',
+18 silly cache add   spec: 'latest',
+18 silly cache add   type: 'tag' }
+19 silly addNamed io.socket@latest
+20 verbose addNamed "latest" is being treated as a dist-tag for io.socket
+21 info addNameTag [ 'io.socket', 'latest' ]
+22 silly mapToRegistry name io.socket
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry data Result {
+25 silly mapToRegistry   raw: 'io.socket',
+25 silly mapToRegistry   scope: null,
+25 silly mapToRegistry   name: 'io.socket',
+25 silly mapToRegistry   rawSpec: '',
+25 silly mapToRegistry   spec: 'latest',
+25 silly mapToRegistry   type: 'tag' }
+26 silly mapToRegistry uri https://registry.npmjs.org/io.socket
+27 verbose addNameTag registry:https://registry.npmjs.org/io.socket not in flight; fetching
+28 verbose request uri https://registry.npmjs.org/io.socket
+29 verbose request no auth needed
+30 info attempt registry request try #1 at 02:02:13
+31 verbose request id 485155ceac7973c0
+32 http request GET https://registry.npmjs.org/io.socket
+33 http 404 https://registry.npmjs.org/io.socket
+34 verbose headers { 'content-type': 'application/json',
+34 verbose headers   'cache-control': 'max-age=0',
+34 verbose headers   'content-length': '2',
+34 verbose headers   'accept-ranges': 'bytes',
+34 verbose headers   date: 'Sat, 11 Jun 2016 17:02:15 GMT',
+34 verbose headers   via: '1.1 varnish',
+34 verbose headers   age: '0',
+34 verbose headers   connection: 'keep-alive',
+34 verbose headers   'x-served-by': 'cache-nrt6123-NRT',
+34 verbose headers   'x-cache': 'MISS',
+34 verbose headers   'x-cache-hits': '0',
+34 verbose headers   'x-timer': 'S1465664534.593809,VS0,VE497',
+34 verbose headers   vary: 'Accept-Encoding' }
+35 silly get cb [ 404,
+35 silly get   { 'content-type': 'application/json',
+35 silly get     'cache-control': 'max-age=0',
+35 silly get     'content-length': '2',
+35 silly get     'accept-ranges': 'bytes',
+35 silly get     date: 'Sat, 11 Jun 2016 17:02:15 GMT',
+35 silly get     via: '1.1 varnish',
+35 silly get     age: '0',
+35 silly get     connection: 'keep-alive',
+35 silly get     'x-served-by': 'cache-nrt6123-NRT',
+35 silly get     'x-cache': 'MISS',
+35 silly get     'x-cache-hits': '0',
+35 silly get     'x-timer': 'S1465664534.593809,VS0,VE497',
+35 silly get     vary: 'Accept-Encoding' } ]
+36 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/io.socket
+36 verbose stack     at makeError (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+36 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
+36 verbose stack     at Request._callback (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+36 verbose stack     at Request.self.callback (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\request.js:199:22)
+36 verbose stack     at emitTwo (events.js:87:13)
+36 verbose stack     at Request.emit (events.js:172:7)
+36 verbose stack     at Request.<anonymous> (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\request.js:1036:10)
+36 verbose stack     at emitOne (events.js:82:20)
+36 verbose stack     at Request.emit (events.js:169:7)
+36 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\request.js:963:12)
+37 verbose statusCode 404
+38 verbose pkgid io.socket
+39 verbose cwd C:\Users\장호준\#1project
+40 error Windows_NT 10.0.10586
+41 error argv "C:\\Program Files (x86)\\nodejs\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "io.socket"
+42 error node v4.4.2
+43 error npm  v2.15.0
+44 error code E404
+45 error 404 Registry returned 404 for GET on https://registry.npmjs.org/io.socket
+45 error 404
+45 error 404 'io.socket' is not in the npm registry.
+45 error 404 You should bug the author to publish it (or use the name yourself!)
+45 error 404 It was specified as a dependency of 'package'
+45 error 404
+45 error 404 Note that you can also install from a
+45 error 404 tarball, folder, http url, or git url.
+46 verbose exit [ 1, true ]

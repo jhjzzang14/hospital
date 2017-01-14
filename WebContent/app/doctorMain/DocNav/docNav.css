@@ -1,7 +1,0 @@
-ul {list-style: none;}
-
-.item {margin-left:50px;float: left; font-size: 25px; font-weight: bold; color:white; width:300px;text-align: center; padding-top: 20px;}
-
-.item:HOVER {
-	color:purple;
-} 

@@ -1,0 +1,27 @@
+@CHARSET "EUC-KR";
+.view {margin: 20px; text-align:center; background-color: white; height:760px;}
+
+
+#searchText {border-radius:5px;height:30px; width:50%;}
+
+#PatientList {font-size:16px;padding:20px}
+
+.view .button {text-align: center;}
+
+.view .button .btn.write-btn {height:30px; background-color:black; color:#ffffff; padding:3px 15px; border-radius:5px; }
+
+.view .btn.write-btn {width:90px;text-size:30px;height:40px; background-color:gray; color:#ffffff; padding:3px 15px; border-radius:5px; }
+
+
+
+.view table {width:100%}
+
+.view table thead tr th { height:45px; text-align:center; color:#ffffff; background-color:black; }
+
+.view table tbody tr td { text-align:center; padding:5px 0; border-bottom:1px solid #f0f2f2; }
+
+.view .insertPatient .form {padding:20px 100px 100px 100px;}
+
+input.ng-invalid {
+  border: 5px solid red;
+}
